@@ -28,8 +28,10 @@ public class  FindElemLcaroTest {
 
     @Test
     public void findElementByTagTest() {
+        //find elements
         WebElement element = driver.findElement(By.tagName("img"));
         System.out.println(element.getText());
+        //find size elements
         List<WebElement> elements = driver.findElements(By.tagName("img"));
         System.out.println(elements.size());
     }
