@@ -28,10 +28,8 @@ public class GdcloudLoginTest {
         //click on Login link
         login();
         //click on the button Sign in
-        driver.findElement(By.xpath("//*[@id='login_button']")).click();
         driver.findElement(By.xpath("//label[contains(@for, 'remember')]")).click();
-        driver.findElement(By.xpath("//*[@id='page_content']/nav/div/div[3]/div[1]/span/span")).click();
-        driver.findElement(By.xpath("//*[@id='page_content']/nav/div/div[3]/div[4]/div/ul/li[1]")).click();
+        driver.findElement(By.xpath("//*[@id='login_button']")).click();
         Assert.assertTrue(isElementPresent(By.cssSelector("#userName")));
 
 
